@@ -1,0 +1,102 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="~/base.master" CodeFile="vertical.master.cs" Inherits="mpVertical" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="cabecera" Runat="Server">
+    <asp:ContentPlaceHolder id="cabecera" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="destacado" Runat="Server">
+    <asp:ContentPlaceHolder id="seccion" runat="server" />
+	<div class="div-central">
+	<asp:ContentPlaceHolder id="encabezado" runat="server" />
+	<asp:ContentPlaceHolder id="titular" runat="server" />
+	<div class="div-principal">
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="contenido" Runat="Server">
+	<asp:ContentPlaceHolder id="contenido" runat="server" />
+	</div>
+	</div>
+</asp:Content>
+
+<asp:Content ID="Content4" ContentPlaceHolderID="sinform" Runat="Server">
+    <asp:ContentPlaceHolder id="sinform" runat="server" />
+	
+<asp:Panel ID="pnlAndroidPie" runat="server" style="text-align: center">
+	<a href="https://play.google.com/store/apps/details?id=com.socialex.pronosticoext" target="_blank" style="color: #666; font-size: 14px">
+	Descargá nuestra app <b>gratis</b>:
+	<br />
+	<img class="lazy" data-src="//cdn.pronosticoextendido.net/imagenes/iconos/google-play.png" alt="Google Play" style="border: 0; margin-top: 5px; margin-bottom: 15px;" />
+	</a>
+</asp:Panel>	
+	
+<div class="div-pie">
+<div class="div-pie-central">
+<br />
+<form action="//www.google.com.ar" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-4874621521685644:3658158392" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="70" />
+    <input type="submit" name="sa" value="Buscar" />
+  </div>
+</form>
+<script type="text/javascript" src="//www.google.com.ar/coop/cse/brand?form=cse-search-box&amp;lang=es"></script>
+<br />
+<div style="text-align: center" class="div-pie-redes">
+<a href="//www.facebook.com/pronosticoextendido" target="_blank"><img class="lazy" data-src="//cdn.pronosticoextendido.net/imagenes/iconos/inferior/facebook.png" alt="Seguinos en Facebook" style="width: 48px; height: 48px; border: 0" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="//www.twitter.com/pronosticoext" target="_blank"><img class="lazy" data-src="//cdn.pronosticoextendido.net/imagenes/iconos/inferior/twitter.png" alt="Seguinos en Twitter" style="width: 48px; height: 48px; border: 0" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://plus.google.com/+PronosticoextendidoNet" target="_blank"><img class="lazy" data-src="//cdn.pronosticoextendido.net/imagenes/iconos/inferior/googleplus.png" alt="Seguinos en Google+" style="width: 48px; height: 48px; border: 0" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="//www.youtube.com/pronosticoext" target="_blank"><img class="lazy" data-src="//cdn.pronosticoextendido.net/imagenes/iconos/inferior/youtube.png" alt="Seguinos en YouTube" style="width: 48px; height: 48px; border: 0" /></a>
+<div class="clear"></div>
+</div>
+
+<div class="div-pie-idiomas">
+<span style="font-size: 22px">PronosticoExtendido.net internacional</span>
+<br />
+<div class="div-pie-item pie-item-idioma">
+<a href="//www.pronosticoextendido.net/" target="_blank">Español</a>
+</div>
+<div class="div-pie-item pie-item-idioma">
+<a href="//www.pronosticoextendido.net/en/" target="_blank">English (beta)</a>
+</div>
+<div class="clear"></div>
+</div>
+
+	<div class="div-pie-item pie-item-contacto">
+		<h3>En contacto</h3>
+		<a href="/contacto/">Escribinos</a><br />
+		<a href="/publicidad/">Publicitá con nosotros</a><br />
+		<a href="/usuarios/crear/" class="ocultar-movil">Registrate gratis</a><br class="ocultar-movil" />
+	</div>
+	<div class="div-pie-item pie-item-recursos">
+		<h3>Mas recursos</h3>
+		<a href="/widgets/radsat/" target="_blank">RadSat en tu web (Widget)</a><br />
+		<a href="/documentos/">Documentos y trabajos</a><br />
+		<a href="http://www.radsat.tv/" target="_blank">RadSat.tv</a><br />
+	</div>
+	<div class="div-pie-item pie-item-apps">
+		<h3>Aplicaciones</h3>
+		<a href="/apps/" class="ocultar-movil">Todas las aplicaciones</a><br class="ocultar-movil" />
+		<a href="https://play.google.com/store/apps/details?id=com.socialex.radar" target="_blank" rel="nofollow">RadSat HD para Android</a><br />
+		<a href="https://play.google.com/store/apps/details?id=com.socialex.pronosticoext" target="_blank" rel="nofollow">Pronóstico para Android</a><br />
+	</div>
+	<div class="div-pie-item pie-item-redes">
+		<h3>Redes sociales</h3>
+		<a href="https://www.facebook.com/pronosticoextendido" target="_blank" rel="nofollow">Página de Facebook</a><br />
+		<a href="https://www.youtube.com/pronosticoext" target="_blank" rel="nofollow">Canal de YouTube</a><br />
+		<a href="https://plus.google.com/+PronosticoextendidoNet" target="_blank" rel="publisher">Página de Google+</a>
+	</div>
+	<div class="clear"></div>
+	® 2012-<%= DateTime.Now.Year.ToString() %> PronosticoExtendido.net.
+	<div class="div-pie-terminos">
+	<a href="/legales/terminos-condiciones/">Términos y condiciones</a>&nbsp;|&nbsp;
+	<a href="/legales/politica-de-privacidad/">Política de privacidad</a>
+	</div>
+</div>
+</div>	
+<script type="text/javascript">
+	if (PE.ventana.ancho > 1360) document.write('<div class="ssk-sticky ssk-left ssk-center ssk-lg"><a href="" class="ssk ssk-facebook"></a><a href="" class="ssk ssk-twitter"></a><a href="" class="ssk ssk-google-plus"></a><a href="" class="ssk ssk-linkedin"></a><a href="" class="ssk ssk-email"></a></div>');
+</script>
+<asp:ContentPlaceHolder id="final" runat="server" />
+</asp:Content>
